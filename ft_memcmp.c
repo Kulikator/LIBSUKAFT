@@ -6,13 +6,13 @@
 /*   By: sirafe <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/28 15:13:22 by sirafe            #+#    #+#             */
-/*   Updated: 2018/11/28 17:13:38 by sirafe           ###   ########.fr       */
+/*   Updated: 2018/11/28 17:44:10 by sirafe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int			ft_memcmp(const void *a1, const void *a2, size_t n)
+int			ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t				i;
 	const unsigned char	*p1;
