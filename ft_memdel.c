@@ -1,31 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncat.c                                       :+:      :+:    :+:   */
+/*   ft_memdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sirafe <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/28 15:41:32 by sirafe            #+#    #+#             */
-/*   Updated: 2018/11/30 16:07:22 by sirafe           ###   ########.fr       */
+/*   Created: 2018/11/30 16:09:10 by sirafe            #+#    #+#             */
+/*   Updated: 2018/11/30 16:29:00 by sirafe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strncat(char *dst, const char *app, size_t n)
+void	ft_memdel(void **ap)
 {
-	char		*ptr;
-	size_t		i;
-
-	ptr = dst;
-	i = 0;
-	while (*ptr)
-		ptr++;
-	while (*app && i < n)
-	{
-		*ptr++ = *app++;
-		i++;
-	}
-	*ptr = 0;
-	return (dst);
+	if (ap == NULL || *ap == NULL)
+		return ;
+	free(*ap);
+	*ap = 0;
 }

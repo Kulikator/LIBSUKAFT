@@ -6,13 +6,13 @@
 /*   By: sirafe <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/28 15:08:52 by sirafe            #+#    #+#             */
-/*   Updated: 2018/11/28 15:08:58 by sirafe           ###   ########.fr       */
+/*   Updated: 2018/11/30 16:07:03 by sirafe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
-	return c >= 0 && c< 128;
+	return (c >= 0 && c < 128);
 }

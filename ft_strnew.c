@@ -1,31 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncat.c                                       :+:      :+:    :+:   */
+/*   ft_strnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sirafe <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/28 15:41:32 by sirafe            #+#    #+#             */
-/*   Updated: 2018/11/30 16:07:22 by sirafe           ###   ########.fr       */
+/*   Created: 2018/11/30 16:12:49 by sirafe            #+#    #+#             */
+/*   Updated: 2018/11/30 16:16:14 by sirafe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strncat(char *dst, const char *app, size_t n)
+char	*ft_strnew(size_t size)
 {
-	char		*ptr;
-	size_t		i;
-
-	ptr = dst;
-	i = 0;
-	while (*ptr)
-		ptr++;
-	while (*app && i < n)
-	{
-		*ptr++ = *app++;
-		i++;
-	}
-	*ptr = 0;
-	return (dst);
+	return ((char *)ft_memalloc(size + 1));
 }
