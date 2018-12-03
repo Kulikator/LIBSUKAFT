@@ -6,7 +6,7 @@
 /*   By: sirafe <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/28 15:59:47 by sirafe            #+#    #+#             */
-/*   Updated: 2018/11/28 17:44:30 by sirafe           ###   ########.fr       */
+/*   Updated: 2018/11/30 19:46:38 by sirafe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@
 # include <stdlib.h>
 # include <string.h>
 
-/*typedef struct		s_list
+typedef struct		s_list
 {
 	void					*content;
 	size_t					content_size;
 	struct s_list	*next;
-}									t_list;*/
+}									t_list;
 
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
@@ -46,7 +46,7 @@ int		ft_strncmp(const char *str1, const char *str2, size_t n);
 int		ft_atoi(const char *str);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
-int   	ft_isalnum(int c);
+int   		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
 int		ft_toupper(int c);
@@ -60,6 +60,8 @@ void	ft_striter(char *s, void (*f)(char *));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	*ft_strmap(char const *s, char (*f)(char));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-int   ft_strequ(char const *s1, char const *s2);
-int   ft_strnequ(char const *s1, char const *s2, size_t n);
+int		ft_strequ(char const *s1, char const *s2);
+int		ft_strnequ(char const *s1, char const *s2, size_t n);
+char	*ft_strsub(char const *s, unsigned int start, size_t len);
+char    *ft_strjoin(char const *s1, char const *s2);
 #endif
