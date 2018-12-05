@@ -6,7 +6,7 @@
 /*   By: sirafe <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/03 17:45:07 by sirafe            #+#    #+#             */
-/*   Updated: 2018/12/03 17:52:06 by sirafe           ###   ########.fr       */
+/*   Updated: 2018/12/05 20:18:53 by sirafe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,12 @@
 
 void	ft_putstr(char const *s)
 {
-	ft_putstr_fd(s, 1);
+	int i;
+
+	if (!s)
+		return ;
+	i = 0;
+	while (s[i])
+		i++;
+	write(1, s, i);
 }
