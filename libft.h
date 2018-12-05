@@ -15,7 +15,6 @@
 
 # include <unistd.h>
 # include <stdlib.h>
-# include <string.h>
 
 typedef struct		s_list
 {
@@ -72,4 +71,7 @@ void	ft_putstr_fd(char const *s, int fd);
 void	ft_putendl_fd(char const *s, int fd);
 void	ft_putendl(char const *s);
 char	**ft_strsplit(char const *s, char c);
+void	ft_putnbr(int n);
+void	ft_putnbr_fd(int n, int fd);
+char	*ft_itoa(int n);
 #endif
