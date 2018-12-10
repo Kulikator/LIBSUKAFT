@@ -6,7 +6,7 @@
 /*   By: sirafe <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/07 18:01:23 by sirafe            #+#    #+#             */
-/*   Updated: 2018/12/07 18:47:23 by sirafe           ###   ########.fr       */
+/*   Updated: 2018/12/10 18:26:53 by sirafe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,6 @@ void	ft_lstadd(t_list **alst, t_list *new)
 {
 	if (!alst || !new)
 		return ;
+	new->next = *alst;
 	*alst = new;
 }

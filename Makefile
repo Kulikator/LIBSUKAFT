@@ -6,7 +6,7 @@
 #    By: sirafe <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/12/05 20:26:15 by sirafe            #+#    #+#              #
-#    Updated: 2018/12/07 17:39:34 by sirafe           ###   ########.fr        #
+#    Updated: 2018/12/10 15:36:07 by sirafe           ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -24,7 +24,7 @@ OBJ = ft_memset.o ft_bzero.o ft_memcpy.o ft_memmove.o ft_memchr.o \
 	ft_itoa.o ft_putchar.o ft_putstr.o ft_putendl.o ft_putnbr.o \
 	ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o \
 	ft_memccpy.o ft_lstnew.o ft_lstdelone.o ft_lstdel.o ft_lstadd.o \
-	ft_lstiter.o \
+	ft_lstiter.o ft_lstmap.o \
 
 all: $(NAME)
 
