@@ -25,6 +25,7 @@ OBJ = ft_memset.o ft_bzero.o ft_memcpy.o ft_memmove.o ft_memchr.o \
 	ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o \
 	ft_memccpy.o ft_lstnew.o ft_lstdelone.o ft_lstdel.o ft_lstadd.o \
 	ft_lstiter.o ft_lstmap.o ft_isspace.o ft_strndup.c ft_strcasestr.o \
+	ft_strcasecmp.o \
 
 all: $(NAME)
 
