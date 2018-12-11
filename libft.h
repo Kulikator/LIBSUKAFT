@@ -6,7 +6,7 @@
 /*   By: sirafe <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/28 15:59:47 by sirafe            #+#    #+#             */
-/*   Updated: 2018/12/10 15:36:43 by sirafe           ###   ########.fr       */
+/*   Updated: 2018/12/11 16:21:32 by sirafe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,5 +84,7 @@ void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
-t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+int					ft_isspace(int c);
+char				*ft_strndup(const char *str, size_t n);
+char				*ft_strcasestr(const char *s1, const char *s2);
 #endif
