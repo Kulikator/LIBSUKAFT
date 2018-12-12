@@ -6,7 +6,7 @@
 /*   By: sirafe <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/28 15:59:47 by sirafe            #+#    #+#             */
-/*   Updated: 2018/12/11 18:27:27 by sirafe           ###   ########.fr       */
+/*   Updated: 2018/12/12 17:21:45 by sirafe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,4 +88,5 @@ int					ft_isspace(int c);
 char				*ft_strndup(const char *str, size_t n);
 char				*ft_strcasestr(const char *s1, const char *s2);
 int					ft_strcasecmp(const char *s1, const char *s2);
+int					ft_strncasecmp(const char *s1, const char *s2, size_t n);
 #endif
